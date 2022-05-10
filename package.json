@@ -1,6 +1,6 @@
 {
   "name": "kencrypto-coin-maker",
-  "repository": "https://gitlab.com/CalebeNavarro/Kencrypto",
+  "repository": "https://github.com/CalebeNavarro/kencrypto-coin-maker",
   "author": "Calebe Navarro",
   "version": "1.0.2",
   "main": "./dist/index.js",
