@@ -1,7 +1,7 @@
 export interface Quote {
   [key: string]: {
     price: number;
-    last_updated: string
+    last_updated: Date;
   }
 }
 
@@ -30,7 +30,7 @@ export interface Coin {
   is_fiat: number;
   date_added: string;
   last_updated: string;
-  quote: any;
+  quote: Quote;
 }
 
 export interface CoinMarketTypes {
@@ -47,6 +47,7 @@ export interface CoinMarketError {
     credit_count: number,
     notice?: any
   }
+  data: any
 }
 
 export function isCoinMarketError(error: any): error is CoinMarketError {
@@ -55,13 +56,15 @@ export function isCoinMarketError(error: any): error is CoinMarketError {
 
 
 export interface CoinMarketConversion {
-  data: {
-    symbol: string,
-    id: number,
-    name: string,
-    amount: number,
-    last_updated: string,
-    quote: Quote;
-  },
+  data: Data,
   status: Status
+}
+
+export interface Data {
+  id: number,
+  symbol: string,
+  name: string,
+  amount: number,
+  last_updated: string,
+  quote: Quote;
 }
