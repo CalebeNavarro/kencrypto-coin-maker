@@ -2,7 +2,7 @@
   "name": "kencrypto-coin-maker",
   "repository": "https://github.com/CalebeNavarro/kencrypto-coin-maker",
   "author": "Calebe Navarro",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "main": "./dist/index.js",
   "license": "MIT",
   "types": "./dist/index.d.ts",
